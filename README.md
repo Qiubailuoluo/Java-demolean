@@ -58,8 +58,9 @@ JDK、Maven、MySQL、Redis 等路径与连接信息见 [docs/environment/](docs
 |------|------|
 | 阶段一：docs 知识点文档 | 已完成 |
 | 阶段二：代码子项目 | 进行中 |
-| jb-01-variables | 骨架已创建，待确认后补全实现 |
-| jb-02-control-flow | 骨架已创建，待确认后补全实现 |
+| jb-01-variables | 已实现，可运行 |
+| jb-02-control-flow | 已实现，可运行 |
+| MySQL 练习库 `javalean` | 见 [database/](database/README.md)，需本地执行初始化脚本 |
 
 ## 文档入口
 
