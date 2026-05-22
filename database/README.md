@@ -28,6 +28,10 @@ mysql -u root -proot javalean -e "source D:/JavaLean/database/02-schema.sql"
 mysql -u root -proot javalean -e "source D:/JavaLean/database/03-seed-data.sql"
 ```
 
+## 查阅文档（推荐）
+
+表结构、关系图、练习 SQL 见 **[database/docs/](docs/README.md)**（Navicat 查询时可对照）。
+
 ## 表一览
 
 | 表名 | 用途 |
@@ -38,6 +42,10 @@ mysql -u root -proot javalean -e "source D:/JavaLean/database/03-seed-data.sql"
 | `t_order` / `t_order_item` | 订单与明细、关联查询 |
 | `t_account` | 转账、事务练习 |
 | `t_student` / `t_course` / `t_enrollment` | 多对多、选课 |
+
+## 状态
+
+本机库 `javalean` 已创建（9 张表 + 初始数据）。详细行数见 [docs/schema-overview.md](docs/schema-overview.md)。
 
 ## 注意
 

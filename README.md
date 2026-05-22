@@ -60,7 +60,7 @@ JDK、Maven、MySQL、Redis 等路径与连接信息见 [docs/environment/](docs
 | 阶段二：代码子项目 | 进行中 |
 | jb-01-variables | 已实现，可运行 |
 | jb-02-control-flow | 已实现，可运行 |
-| MySQL 练习库 `javalean` | 见 [database/](database/README.md)，需本地执行初始化脚本 |
+| MySQL 练习库 `javalean` | 已初始化；脚本 [database/](database/README.md)，**查阅** [database/docs/](database/docs/README.md) |
 
 ## 文档入口
 

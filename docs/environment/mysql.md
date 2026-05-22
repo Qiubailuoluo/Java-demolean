@@ -8,7 +8,7 @@
 | 端口 | `3306` |
 | 用户名 | `root` |
 | 密码 | `root` |
-| 默认练习库 | **`javalean`**（建表与种子数据见仓库 [`database/`](../../database/README.md)） |
+| 默认练习库 | **`javalean`**（脚本 [`database/`](../../database/README.md)，**查阅文档** [`database/docs/`](../../database/docs/README.md)） |
 
 ## JDBC URL 模板
 

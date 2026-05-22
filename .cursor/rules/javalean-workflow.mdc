@@ -44,8 +44,10 @@ alwaysApply: true
 
 ## 7. 测试目录（`src/test`）
 
-- **非刚需**：以 `main` 演示 + 文档验收命令为主的入门模块，可不建测试或仅保留少量 JUnit。
-- 若文档写明 `mvn test` 验收，可保留精简测试；新增模块时优先问用户是否需要 `src/test`。
+- 建议每个模块保留 `src/test`，分两类：
+  - **验收测试**（如 `*DemoTest.java`）：已实现逻辑，随 `mvn test` 必须通过。
+  - **动手练习**（如 `*PracticeTest.java`）：简单习题，默认 `@Disabled`，用户在 `practice` 包或测试方法内补代码后自行去掉 `@Disabled` 验证。
+- 数据库查阅文档放在 [`database/docs/`](../../database/docs/README.md)，与 SQL 脚本目录分离。
 
 ## 参考文档
 
