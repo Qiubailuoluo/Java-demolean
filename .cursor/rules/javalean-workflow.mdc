@@ -1,0 +1,43 @@
+---
+description: JavaLean 项目协作约束：追问确认、分步推进、最小影响、先骨架后实现
+alwaysApply: true
+---
+
+# JavaLean 工作流约束
+
+本规则适用于 `JavaLean` 仓库内所有 AI 协作任务。
+
+## 1. 不理解必须追问，禁止臆测
+
+- 对用户问题、需求、环境信息若存在歧义或缺失，**必须继续询问**，直到可以明确执行。
+- **不允许**补充想象：不编造未提供的 URL、端口、密码、表结构、类名、第三方配置。
+- 环境信息以 [docs/environment/README.md](../../docs/environment/README.md) 为准；无记录则向用户确认后再写入。
+
+## 2. 分步推进，禁止一次性全量完成
+
+- 每次任务聚焦 **一个 moduleId** 或 **一类文件**（例如仅 jb-01 骨架、仅补全 jb-01 测试）。
+- **不允许**在未确认的情况下批量生成全部 java-basics / springboot / springcloud 子项目。
+- 阶段二流程：读对应 `docs/` 知识点 → 生成或修改该 `moduleId` 目录 → 用户确认骨架 → 再补全实现与测试。
+
+## 3. 最小影响原则
+
+- 每次修改范围尽量小：不改动与当前任务无关的模块、文档、配置。
+- 不重命名、不重构未要求的历史代码。
+- `pom.xml` 中不写 IDE 本机绝对路径（JDK/Maven 路径只记在 `docs/environment/`）。
+
+## 4. 先骨架，确认后再写实现
+
+- 新模块优先创建：`pom.xml`、目录结构、占位 `.java`（方法体内 `// TODO: 待用户确认后实现`）。
+- 骨架阶段 **不要求** `mvn test` 必须通过。
+- 用户确认骨架后，再补充业务代码、测试，并单独 commit。
+
+## 5. 版本管理
+
+- 完成一个可验收步骤后执行 Git 提交；必要时推送到 `origin`。
+- Commit 信息简洁说明「为什么」，聚焦当前 moduleId 或文档变更。
+
+## 参考文档
+
+- 知识点与子项目规格：[docs/README.md](../../docs/README.md)
+- 学习路线：[docs/00-学习路线.md](../../docs/00-学习路线.md)
+- 本机环境（JDK/Maven/MySQL/Redis）：[docs/environment/README.md](../../docs/environment/README.md)
