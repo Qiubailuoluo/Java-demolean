@@ -11,6 +11,7 @@
 | [maven.md](maven.md) | Maven 主路径、settings、本地仓库 |
 | [mysql.md](mysql.md) | MySQL 连接默认值 |
 | [redis.md](redis.md) | Redis 连接默认值 |
+| [database/](../../database/README.md) | MySQL 库 `javalean` 建表与初始数据 |
 
 ## 使用说明
 
