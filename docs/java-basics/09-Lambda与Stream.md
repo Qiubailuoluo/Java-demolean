@@ -37,14 +37,12 @@ Lambda 是函数式接口的实例语法糖。Stream 对集合做声明式数据
 | `Optional` | 可选值 |
 | `@FunctionalInterface` | 函数式接口 |
 
-## 代码片段
+## 对应代码
 
-```java
-List<String> names = List.of("alice", "bob", "anna");
-long count = names.stream()
-    .filter(n -> n.startsWith("a"))
-    .count();
-```
+| 类 | 路径 |
+|----|------|
+| `StreamDemo` | [`StreamDemo.java`](../../java-basics/jb-09-stream/src/main/java/com/lean/stream/StreamDemo.java) |
+| `Employee` / `EmployeeStats` | 同包 `com.lean.stream` |
 
 ## 子项目规格
 
@@ -66,13 +64,9 @@ long count = names.stream()
 
 ```bash
 cd java-basics/jb-09-stream
+mvn -q exec:java
 mvn test
 ```
-
-## 练习
-
-1. 按部门分组求最高薪资（`Collectors.groupingBy`）。
-2. 将 `Optional` 链式用于查找第一个满足条件的员工。
 
 ## 参考资料
 

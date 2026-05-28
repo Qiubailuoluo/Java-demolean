@@ -37,13 +37,12 @@
 | `Files.readString` / `Files.writeString` | NIO.2 便捷方法 |
 | `Path` / `Paths` | 路径 |
 
-## 代码片段
+## 对应代码
 
-```java
-Path path = Path.of("target", "hello.txt");
-Files.writeString(path, "你好\n", StandardCharsets.UTF_8);
-String content = Files.readString(path, StandardCharsets.UTF_8);
-```
+| 类 | 路径 |
+|----|------|
+| `IoDemo` | [`IoDemo.java`](../../java-basics/jb-07-io/src/main/java/com/lean/io/IoDemo.java) |
+| `FileCopyUtil` | [`FileCopyUtil.java`](../../java-basics/jb-07-io/src/main/java/com/lean/io/FileCopyUtil.java) |
 
 ## 子项目规格
 
@@ -68,12 +67,7 @@ cd java-basics/jb-07-io
 mvn test
 ```
 
-**验证步骤：** 测试在 `java.io.tmpdir` 下创建文件并复制，断言内容一致。
-
-## 练习
-
-1. 递归列出目录下所有 `.java` 文件（`Files.walk`）。
-2. 对比 `FileInputStream` 与 `Files.copy` 实现复制的代码量。
+**验证步骤：** `mvn -q exec:java` 在 `target/io-demo` 生成文件；`mvn test` 在临时目录断言复制。
 
 ## 参考资料
 

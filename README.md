@@ -58,9 +58,10 @@ JDK、Maven、MySQL、Redis 等路径与连接信息见 [docs/environment/](docs
 |------|------|
 | 阶段一：docs 知识点文档 | 已完成 |
 | 阶段二：代码子项目 | 进行中 |
-| jb-01-variables | 已实现，可运行 |
-| jb-02-control-flow | 已实现，可运行 |
-| MySQL 练习库 `javalean` | 已初始化；脚本 [database/](database/README.md)，**查阅** [database/docs/](database/docs/README.md) |
+| jb-01 ～ jb-12（Java 基础） | 均已实现；阅读源码 + `mvn -q exec:java` |
+| jb-01 / jb-02 动手练习 | 仅这两章含 `*PracticeTest`（需时再做） |
+| MySQL 练习库 `javalean` | 已初始化；[database/docs/](database/docs/README.md) |
+| Spring Boot / Cloud | 待按文档逐步实现 |
 
 ## 文档入口
 
